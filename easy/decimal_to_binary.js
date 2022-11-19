@@ -24,9 +24,7 @@ function binary(num) {
 	let bin = "";
 	if (num < 1) { return "0";}
 	while (quotient >= 1) {
-		print(quotient);
-		print((parseInt(quotient/2))%2);
-		if ((parseInt(quotient/2))%2 == 1) {
+		if (quotient/2 - (parseInt(quotient/2)) > 0) {
 			bin = bin + "1";
 			quotient = parseInt(quotient / 2);
 		}
@@ -39,11 +37,11 @@ function binary(num) {
 	//We can split the string into elements
 	//We can reverse the array of elements
 	//We can join the elements back into a string
-	print(bin);
+	//print(bin);
 	let splited = bin.split("");// we have to pass a delimiter encapsulated in double strings. Here we can pass empty strings to split every element.
-	print(splited);
+	//print(splited);
 	let reversed = splited.reverse();
-	print(splited);
+	//print(splited);
 	let joined = reversed.join("");
 	return joined;
 }
