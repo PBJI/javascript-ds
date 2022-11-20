@@ -25,10 +25,10 @@ function numberSquares(lower_grid_squares) {
 		return 0;
 	}
 	if (lower_grid_squares < 1) {
-		return lower_grid_squares * lower_grid_squares;
+		return lower_grid_squares ** 2;
 	}
 	upper_grid_squares = numberSquares(lower_grid_squares - 1);
-	var total_squares_this_level = lower_grid_squares * lower_grid_squares + upper_grid_squares;
+	var total_squares_this_level = lower_grid_squares ** 2 + upper_grid_squares;
 	//console.log(total_squares_this_level);
 	return total_squares_this_level;
 }
