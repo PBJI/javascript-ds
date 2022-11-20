@@ -12,8 +12,10 @@ All test cases contain valid dates.
 
 */
 function timeForMilkAndCookies(date) {
-	if (date.getDate() == 24 && date.getMonth() == 11) { return true; }
-	return false;
+    if (date.getDate() == 24 && date.getMonth() == 11) {
+        return true;
+    }
+    return false;
 }
 
 console.log(timeForMilkAndCookies(new Date(2013, 11, 24)));

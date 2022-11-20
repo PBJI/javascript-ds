@@ -17,18 +17,16 @@ Notes
 This exercise is designed as an introduction to higher order functions (functions which use other functions to do their work).*/
 
 function whichIsLarger(fun1, fun2) {
-	num1 = fun1();
-	num2 = fun2(55555);
-	if (num1 < num2) {
-		return "g";
-	}
-	else if (num1 == num2) {
-		return "f";
-	}
-	else if (num1 > num2) {
-		return "neither";
-	}
-	return [num1, num2];
+    num1 = fun1();
+    num2 = fun2(55555);
+    if (num1 < num2) {
+        return "g";
+    } else if (num1 == num2) {
+        return "f";
+    } else if (num1 > num2) {
+        return "neither";
+    }
+    return [num1, num2];
 }
 
 console.log(whichIsLarger(() => 5, () => 10));

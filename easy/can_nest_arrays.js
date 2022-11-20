@@ -20,18 +20,17 @@ Notes
 Note the strict inequality (see example #3).*/
 
 function canNest(arr1, arr2) {
-	//console.log(Math.min(...arr1));
-	//console.log(Math.max(...arr1));
-	//console.log(Math.min(...arr2));
-	//console.log(Math.max(...arr2));
-	if (Math.min(...arr1) > Math.min(...arr2) && Math.max(...arr1) < Math.max(...arr2)) {
-		return true;
-	}
-	else {
-		return false;
-	}
+    //console.log(Math.min(...arr1));
+    //console.log(Math.max(...arr1));
+    //console.log(Math.min(...arr2));
+    //console.log(Math.max(...arr2));
+    if (Math.min(...arr1) > Math.min(...arr2) && Math.max(...arr1) < Math.max(...arr2)) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 console.log(canNest([1, 2, 3, 4], [0, 6]));
 console.log(
-canNest([1, 2, 3, 4], [2, 3]));
+    canNest([1, 2, 3, 4], [2, 3]));

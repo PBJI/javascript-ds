@@ -20,34 +20,35 @@ Notes
     If a binary conversion for 0 is attempted, return "0".*/
 
 function binary(num) {
-	let quotient = num;
-	let bin = "";
-	if (num < 1) { return "0";}
-	while (quotient >= 1) {
-		if (quotient/2 - (parseInt(quotient/2)) > 0) {
-			bin = bin + "1";
-			quotient = parseInt(quotient / 2);
-		}
-		else {
-			bin = bin + "0";
-			quotient = parseInt(quotient / 2);
-		}
-	}
+    let quotient = num;
+    let bin = "";
+    if (num < 1) {
+        return "0";
+    }
+    while (quotient >= 1) {
+        if (quotient / 2 - (parseInt(quotient / 2)) > 0) {
+            bin = bin + "1";
+            quotient = parseInt(quotient / 2);
+        } else {
+            bin = bin + "0";
+            quotient = parseInt(quotient / 2);
+        }
+    }
 
-	//We can split the string into elements
-	//We can reverse the array of elements
-	//We can join the elements back into a string
-	//print(bin);
-	let splited = bin.split("");// we have to pass a delimiter encapsulated in double strings. Here we can pass empty strings to split every element.
-	//print(splited);
-	let reversed = splited.reverse();
-	//print(splited);
-	let joined = reversed.join("");
-	return joined;
+    //We can split the string into elements
+    //We can reverse the array of elements
+    //We can join the elements back into a string
+    //print(bin);
+    let splited = bin.split(""); // we have to pass a delimiter encapsulated in double strings. Here we can pass empty strings to split every element.
+    //print(splited);
+    let reversed = splited.reverse();
+    //print(splited);
+    let joined = reversed.join("");
+    return joined;
 }
 
 function print(content) {
-	console.log(content);
+    console.log(content);
 }
 
 print(binary(5));
