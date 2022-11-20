@@ -24,6 +24,7 @@ function numberSquares(lower_grid_squares) {
 	if (lower_grid_squares < 0) {
 		return 0;
 	}
+	/*
 	if (lower_grid_squares < 1) {
 		return lower_grid_squares ** 2;
 	}
@@ -31,6 +32,21 @@ function numberSquares(lower_grid_squares) {
 	var total_squares_this_level = lower_grid_squares ** 2 + upper_grid_squares;
 	//console.log(total_squares_this_level);
 	return total_squares_this_level;
+	*/
+
+	// This is most optimized version of this function, as this uses mathematical formula instead of the iterating solution.
+	let n = lower_grid_squares;
+	//console.log(n);
+	let step1 = n + 1;
+	//console.log(step1);
+	let step2 = step1 * n;
+	//console.log(step2);
+	let step3 = 2 * n + 1;
+	//console.log(step3);
+	let step4 = step2 * step3;
+	//console.log(step4);
+	let step5 = step4 / 6;
+	return step5;
 }
 
 
