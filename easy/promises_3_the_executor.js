@@ -21,4 +21,4 @@ let promise = new Promise( (resolve, reject) => {
 	}, 4000)
 })
 
-
+// This promise concept I will try to understand afterwards, when I am done with asynchronous based operations.
